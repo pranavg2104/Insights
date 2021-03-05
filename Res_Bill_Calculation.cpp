@@ -7,9 +7,13 @@ int bill(int , int );
 int main()
 {
  int l_r, c_r,y;
+ long long int num;
  cout<<"\n Enter Last Month Reading and Current Month Reading:"; //Enter last months reading first then current month reading
  cin>>l_r>>c_r;
+ cout<<"\n enter meter number:";
+ cin>>num;
  y=bill(l_r,c_r);
+ cout<<"Meter Number:"<<num;
  cout<<"\n The Bill Amount for this Months is:"<<y;
  return 0;
 }
